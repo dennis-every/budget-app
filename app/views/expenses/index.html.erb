@@ -1,4 +1,7 @@
 <section class='container'>
+  <div class='text-end'>
+    <%= link_to 'Add Expense', new_category_expense_path, class: 'btn btn-primary' %>
+  </div>
   <h1>Expenses</h1>
   <% if @expenses.any? %>
     <ul>
