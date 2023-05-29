@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  resources :categories, only: [:index]
+  resources :splash, only: [:index]
+  root 'splash#index'
   devise_for :users
-  root 'categories#index'
+  resources :categories, only: [:index]
 end
