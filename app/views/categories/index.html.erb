@@ -1,2 +1,11 @@
-<h1>Categories#index</h1>
-<p>Find me in app/views/categories/index.html.erb</p>
+<section class='container'>
+  <div class="text-end">
+    <%= link_to 'Add Category', new_category_path, class: 'btn btn-primary' %>
+  </div>
+  <h1>Categories#index</h1>
+  <ul>
+    <% @categories.each do |category| %>
+      <li><%= category.name %></li>
+    <% end %>
+  </ul>
+</section>
