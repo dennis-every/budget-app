@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
   before_action :authenticate_user!
+  load_and_authorize_resource unless: :devise_controller?
   before_action :devise_allowed_parameters, if: :devise_controller?
 
   protected
