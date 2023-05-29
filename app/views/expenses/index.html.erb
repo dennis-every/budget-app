@@ -1,0 +1,12 @@
+<section class='container'>
+  <h1>Expenses</h1>
+  <% if @expenses.any? %>
+    <ul>
+      <% @expenses.each do |expense| %>
+        <li><%= expense.name %></li>
+      <% end %>
+    </ul>
+  <% else %>
+    <p>No expenses in this category</p>
+  <% end %>
+</section>

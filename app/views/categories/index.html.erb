@@ -5,7 +5,7 @@
   <h1>Categories#index</h1>
   <ul>
     <% @categories.each do |category| %>
-      <li><%= category.name %></li>
+      <li><%= link_to category.name, category_expenses_path(category) %></li>
     <% end %>
   </ul>
 </section>
