@@ -21,4 +21,9 @@ describe Expense, type: :model do
     expense = Expense.new(name: 'Cheeseburger', amount: '2.99', author_id: '')
     expect(expense).to_not be_valid
   end
+
+  describe 'associations' do
+    it { should have_many(:category_expenses) }
+    it { should have_many(:categories) }
+  end
 end

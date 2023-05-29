@@ -3,4 +3,7 @@ class Expense < ApplicationRecord
 
   validates :name, presence: true
   validates :amount, presence: true
+
+  has_many :category_expenses
+  has_many :categories, through: :category_expenses
 end

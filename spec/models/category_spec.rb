@@ -15,4 +15,9 @@ describe Category, type: :model do
     category = Category.new(name: 'Food', icon: '')
     expect(category).to_not be_valid
   end
+
+  describe 'associations' do
+    it { should have_many(:category_expenses) }
+    it { should have_many(:expenses) }
+  end
 end
