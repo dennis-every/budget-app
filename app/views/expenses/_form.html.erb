@@ -1,0 +1,22 @@
+<%= form_with model: [@category, expense] do |form| %>
+  <div>
+    <%= form.label :name %> <br>
+    <%= form.text_field :name %>
+  </div>
+  <div>
+    <%= form.label :amount %> <br>
+    <%= form.number_field :amount %>
+  </div>
+  <div>
+    <%= form.label :category_ids, "Additional Categories" %>
+    <%= form.collection_select :category_ids, 
+                               Category.where.not(id: @category.id),
+                               :id, 
+                               :name, 
+                               {}, 
+                               { multiple: true } %>
+  </div>
+  <div class='mt-3'>
+    <%= form.submit %>
+  </div>
+<% end %>

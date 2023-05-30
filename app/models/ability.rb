@@ -7,7 +7,8 @@ class Ability
     # additional permissions for logged in users
     return unless user.present?
 
-    can :index, Category
+    can %i[read create], Category
+    can %i[index create], Expense
     # The first argument to `can` is the action you are giving the user
     # permission to do.
     # If you pass :manage it will apply to every action. Other common actions
