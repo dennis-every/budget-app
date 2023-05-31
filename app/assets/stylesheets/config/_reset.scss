@@ -40,6 +40,16 @@ select {
   font: inherit;
 }
 
+input {
+  width: 100%;
+  padding: var(--space-s) 0 var(--space-s) var(--space-xs);
+  border: none;
+}
+
+input::placeholder {
+  color: var(--color-text-muted);
+}
+
 h1,
 h2,
 h3,
