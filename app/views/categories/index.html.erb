@@ -1,11 +1,30 @@
-<section class='container'>
-  <div class="text-end">
-    <%= link_to 'Add Category', new_category_path, class: 'btn btn-primary' %>
-  </div>
-  <h1>Categories#index</h1>
-  <ul>
-    <% @categories.each do |category| %>
-      <li><%= link_to category.name, category_expenses_path(category) %></li>
-    <% end %>
-  </ul>
+<section class='categories'>
+  <header>
+    <%= link_to '<i class="fa-solid fa-bars"></i>'.html_safe, root_path, class: 'icon' %>
+    <h1>Categories</h1>
+    <%= link_to '<i class="fa-solid fa-plus"></i>'.html_safe, new_category_path, class: 'icon text-end' %>
+  </header>
+  <main>
+    <ul>
+      <% @categories.each do |category| %>
+        <%= link_to category_expenses_path(category) do %>
+          <li class='card'>
+            <div class="card--icon">
+              <i class="fa-solid fa-house"></i>
+            </div>
+            <div class='card--description'>
+              <p><b><%= category&.name %></b></p>
+              <p><%= category&.created_at&.strftime('%e %b %Y') %></p>
+            </div>
+            <span class='text-end'><%= number_to_currency(category&.total(current_user)) %></span>
+          </li>
+        <% end %>
+      <% end %>
+    </ul>
+  </main>
+  <footer class='categories--footer'>
+    <div class='categories--btn-wrap'>
+      <%= link_to 'Add', new_category_path, class: 'btn btn--secondary' %>
+    </div>
+  </footer>
 </section>

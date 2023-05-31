@@ -4,4 +4,8 @@ class Category < ApplicationRecord
 
   has_many :category_expenses
   has_many :expenses, through: :category_expenses
+
+  def total(user)
+    expenses.where(author: user).sum(&:amount)
+  end
 end

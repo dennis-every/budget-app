@@ -1,4 +1,4 @@
-.devise {
+.categories {
   height: 100vh;
   display: grid;
   grid-template-rows: 1fr 8fr;
@@ -37,16 +37,12 @@
   }
 
   main {
-    padding-top: var(--space-s);
+    padding: var(--space-xxs);
     background: var(--color-background-light);
+  }
 
-    .links {
-      padding-top: var(--space-l);
-      text-align: center;
-
-      a {
-        color: var(--color-text-muted);
-      }
-    }
+  &--footer {
+    background: var(--color-secondary);
+    padding: var(--space-m);
   }
 }
