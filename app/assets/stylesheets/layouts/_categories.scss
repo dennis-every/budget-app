@@ -7,7 +7,7 @@
     color: var(--color-white);
     background: var(--color-primary);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 1fr;
     align-items: center;
     padding: 0.5rem;
 
@@ -37,7 +37,8 @@
   }
 
   main {
-    padding: var(--space-xxs);
+    margin-top: var(--space-xxs);
+    padding: var(--space-xxs) 0;
     background: var(--color-background-light);
   }
 
