@@ -26,11 +26,12 @@
   // Modifiers
   &--primary {
     color: var(--color-white);
-    background-image: linear-gradient(
-      to right,
-      var(--color-primary),
-      var(--color-primary-rotate)
-    );
+    background-image:
+      linear-gradient(
+        to right,
+        var(--color-primary),
+        var(--color-primary-rotate)
+      );
 
     &:hover,
     &:focus,
@@ -43,11 +44,12 @@
 
   &--secondary {
     color: var(--color-white);
-    background-image: linear-gradient(
-      to right,
-      var(--color-secondary),
-      var(--color-secondary-rotate)
-    );
+    background-image:
+      linear-gradient(
+        to right,
+        var(--color-secondary),
+        var(--color-secondary-rotate)
+      );
 
     &:hover,
     &:focus,
