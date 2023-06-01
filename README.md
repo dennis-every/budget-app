@@ -4,6 +4,7 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Budget app ](#-budget-app-)
+- [💻 Demo ](#-demo-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -13,7 +14,6 @@
     - [Install](#install)
     - [Usage](#usage)
   - [👥 Authors ](#-authors-)
-  - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
   - [⭐️ Show your support ](#️-show-your-support-)
   - [🙏 Acknowledgments ](#-acknowledgments-)
@@ -25,6 +25,11 @@
 # 📖 Budget app <a name="budget-app"></a>
 
 A mobile web application built with Ruby on Rails where users can manage their budget; users can list expenses associated with a category and see how much money they've spent and on what.
+
+# 💻 Demo <a name="demo"></a>
+
+- A live version of this app can be found at: https://budget-app-4q8x.onrender.com/
+- A short video presentation of the app can be found here: https://youtu.be/_R0fUD80M-s
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -99,7 +104,6 @@ To run the project, execute the following command:
 - GitHub: [@dennis-every](https://github.com/dennis-every)
 - Twitter: [@dennis_every](https://twitter.com/dennis_every)
 - LinkedIn: [dennis-every](https://www.linkedin.com/in/dennis-every/)
-
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
