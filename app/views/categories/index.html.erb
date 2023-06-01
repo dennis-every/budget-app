@@ -7,7 +7,7 @@
   <main>
     <ul>
       <% @categories.each do |category| %>
-        <%= link_to category_expenses_path(category) do %>
+        <%= link_to category_path(category) do %>
           <li class='card'>
             <div class="card--icon">
               <i class="fa-solid fa-house"></i>
@@ -24,7 +24,7 @@
   </main>
   <footer class='categories--footer'>
     <div class='categories--btn-wrap'>
-      <%= link_to 'Add', new_category_path, class: 'btn btn--secondary' %>
+      <%= link_to 'Add Category', new_category_path, class: 'btn btn--secondary' %>
     </div>
   </footer>
 </section>

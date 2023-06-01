@@ -6,4 +6,6 @@ class Expense < ApplicationRecord
 
   has_many :category_expenses, dependent: :destroy
   has_many :categories, through: :category_expenses
+
+  scope :ordered, -> { order(created_at: :asc) }
 end

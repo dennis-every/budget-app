@@ -1,0 +1,39 @@
+<section class='categories'>
+  <header>
+    <%= link_to sanitize("&larr;"), :back, class: 'icon' %>
+    <h1>Category Details</h1>
+    <%= link_to '<i class="fa-solid fa-plus"></i>'.html_safe, new_category_expense_path(@category), class: 'icon text-end' %>
+  </header>
+  <main>
+    <% if @expenses.any? %>
+      <div class='categories--details'>
+        <div class='categories--details--header border-bottom py-2'>
+          <div class='py-2'>
+            <span><i class="fa-solid fa-house logo"></i></span>
+            <span><%= @category&.name %></span>
+          </div>
+          <p class='text'><%= Faker::Quote.matz %></p>
+        </div>
+        <% @expenses.ordered.each do |expense| %>
+          <div class='border-bottom py-3'>
+            <p><b><%= expense.name %></b></p>
+            <p class='text-muted'><i class="fa-solid fa-calendar"></i> <%= expense.created_at.strftime('%d %b  %Y at %I.%M%P') %></p>
+          </div>
+        <% end %>
+        <div class='d-flex justify-content-between py-3'>
+          <span>TOTAL PAYMENT</span>
+          <span><%= number_to_currency(@category.total(current_user)) %></span>
+        </div>
+      </div>
+    <% else %>
+      <div class='categories--no-expenses'>
+        <p>No expenses in category <%= @category&.name %></p>
+      </div>
+    <% end %>
+  </main>
+  <footer class='categories--footer'>
+    <div class='categories--btn-wrap'>
+      <%= link_to 'Add Expense', new_category_expense_path(@category), class: 'btn btn--secondary' %>
+    </div>
+  </footer>
+</section>
