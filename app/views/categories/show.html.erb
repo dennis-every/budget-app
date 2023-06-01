@@ -1,12 +1,12 @@
 <section class='categories'>
   <header>
-    <%= link_to sanitize("&larr;"), :back, class: 'icon' %>
+    <%= link_to sanitize("&larr;"),  categories_path, class: 'icon' %>
     <h1>Category Details</h1>
     <%= link_to '<i class="fa-solid fa-plus"></i>'.html_safe, new_category_expense_path(@category), class: 'icon text-end' %>
   </header>
   <main>
     <% if @expenses.any? %>
-      <div class='categories--details'>
+      <div class='categories--details mx-2'>
         <div class='categories--details--header border-bottom py-2'>
           <div class='py-2'>
             <span><i class="fa-solid fa-house logo"></i></span>

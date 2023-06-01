@@ -1,0 +1,9 @@
+// app/assets/stylesheets/components/_error_message.scss
+
+.error-message {
+  width: 100%;
+  color: hsl(350, 67%, 50%);
+  background-color: hsl(0, 85%, 96%);
+  padding: var(--space-xs);
+  border-radius: var(--border-radius);
+}

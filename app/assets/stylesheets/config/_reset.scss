@@ -44,12 +44,14 @@ select {
   font: inherit;
 }
 
-input {
+input,
+select {
   width: 100%;
   padding: var(--space-s) 0 var(--space-s) var(--space-xs);
   border: none;
 }
 
+option,
 input::placeholder {
   color: var(--color-text-muted);
 }

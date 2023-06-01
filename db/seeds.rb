@@ -16,17 +16,18 @@ user = User.create(
 
 Category.destroy_all
 category = Category.create!(name: 'Groceries', icon: 'food')
+Expense.destroy_all
 10.times do
-  expense = category.expenses.build(name: Faker::Food.fruits, amount: rand(0.5..10.0) ,author: user)
+  expense = Expense.new(name: Faker::Food.fruits, amount: rand(0.5..10.0) ,author: user, category_ids: [category.id])
   expense.save!
 end
 category = Category.create!(name: 'Books', icon: 'books')
 10.times do
-  expense = category.expenses.build(name: Faker::Book.title, amount: rand(0.5..10.0) ,author: user)
+  expense = Expense.new(name: Faker::Book.title, amount: rand(0.5..10.0), author: user, category_ids: [category.id])
   expense.save!
 end
 category = Category.create!(name: 'Movies', icon: 'movies')
 10.times do
-  expense = category.expenses.build(name: Faker::Movie.title, amount: rand(0.5..10.0) ,author: user)
+  expense = Expense.new(name: Faker::Movie.title, amount: rand(0.5..10.0), author: user, category_ids: [category.id])
   expense.save!
 end

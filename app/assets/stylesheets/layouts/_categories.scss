@@ -37,8 +37,7 @@
   }
 
   main {
-    min-height: calc(100vh - 5rem);
-    padding: var(--space-xxs);
+    min-height: 100vh;
     padding-top: 6rem;
     padding-bottom: 7rem;
     background: var(--color-background-light);

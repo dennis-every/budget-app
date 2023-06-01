@@ -13,8 +13,7 @@ class ExpensesController < ApplicationController
     @expense = Expense.new(expense_params)
     @expense.author = current_user
     if @expense.save
-      @expense.categories << @category
-      redirect_to category_expenses_path(@category)
+      redirect_to @category
     else
       render :new, status: :unprocessable_entity
     end
