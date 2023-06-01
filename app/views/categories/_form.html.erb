@@ -1,4 +1,5 @@
 <%= form_with model: category do |form| %>
+  <%= form_error_notification(category) %>
   <div class="field border-top border-bottom">
     <%= form.text_field :name, placeholder: 'Name' %>
   </div>
