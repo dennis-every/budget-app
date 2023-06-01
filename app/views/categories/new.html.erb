@@ -1,4 +1,10 @@
-<section class='container'>
-  <h1>New category</h1>
-  <%= render 'form', category: @category %>
+<section class='categories'>
+  <header>
+    <%= link_to sanitize("&larr;"), categories_path, class: 'icon' %>
+    <h1>New Category</h1>
+    <span></span>
+  </header>
+  <main>
+    <%= render 'form', category: @category %>
+  </main>
 </section>

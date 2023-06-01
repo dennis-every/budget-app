@@ -1,5 +1,7 @@
-<section id='splash'>
-  <h1>Splash#index</h1>
-  <p><%= link_to 'Login', new_user_session_path, class:'btn btn-primary' %></p>
-  <p><%= link_to 'Signup', new_user_registration_path, class:'btn btn-primary' %></p>
+<section class='splash'>
+  <h1>Snapscan</h1>
+  <div class='splash--buttons'>
+    <%= link_to 'Log in', new_user_session_path, class:'btn btn--primary' %>
+    <%= link_to 'Sign up', new_user_registration_path, class:'btn btn--ghost' %>
+  </div>
 </section>

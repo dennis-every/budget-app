@@ -1,13 +1,12 @@
 <%= form_with model: category do |form| %>
-  <div>
-    <%= form.label :name %> <br>
-    <%= form.text_field :name %>
+  <%= form_error_notification(category) %>
+  <div class="field border-top border-bottom">
+    <%= form.text_field :name, placeholder: 'Name' %>
   </div>
-  <div>
-    <%= form.label :icon %> <br>
-    <%= form.text_field :icon %>
+  <div class="field border-bottom">
+    <%= form.text_field :icon, placeholder: 'Icon' %>
   </div>
-  <div class='mt-3'>
-    <%= form.submit %>
+  <div class='mt-5 px-1'>
+    <%= form.submit class: 'btn btn--primary' %>
   </div>
 <% end %>

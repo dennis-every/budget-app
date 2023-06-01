@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Expenses', type: :request do
-  describe 'GET /index' do
+  describe 'GET /new' do
     let(:user) do
       User.create(
         name: 'John',
@@ -18,7 +18,7 @@ RSpec.describe 'Expenses', type: :request do
     end
 
     it 'returns http success' do
-      get category_expenses_path(category)
+      get new_category_expense_path(category)
       expect(response).to have_http_status(:success)
     end
   end
