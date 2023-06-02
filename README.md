@@ -129,7 +129,9 @@ If you like this project feel free to fork it and use it as you need and don't f
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the information provided to build this project.
+- I would like to thank Microverse for the information provided to build this project.
+
+- I would like to credit the author for the original design idea [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
