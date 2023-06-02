@@ -29,7 +29,7 @@ A mobile web application built with Ruby on Rails where users can manage their b
 # 💻 Demo <a name="demo"></a>
 
 - A live version of this app can be found at: https://budget-app-4q8x.onrender.com/
-- A short video presentation of the app can be found here: https://youtu.be/_R0fUD80M-s
+- A short video presentation of the app can be found here: https://youtu.be/AxWxYW-VmgY
 
 ## 🛠 Built With <a name="built-with"></a>
 
