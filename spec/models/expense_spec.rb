@@ -3,7 +3,7 @@ require 'rails_helper'
 describe Expense, type: :model do
   user = User.create!(name: 'John', email: "#{Faker::Name.first_name}@test.com", password: 'password',
                       password_confirmation: 'password')
-  category = Category.create!(name: Faker::Food.fruits, icon: 'food')
+  category = Category.create!(name: "Food #{rand}", icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg')
   it 'is valid with a name, amount, author, and at least one category' do
     expense = Expense.new(name: 'Cheeseburger', amount: '2.99', author: user, category_ids: [category.id])
     expect(expense).to be_valid

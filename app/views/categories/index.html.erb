@@ -10,7 +10,7 @@
         <%= link_to category_path(category) do %>
           <li class='card'>
             <div class="card--icon">
-              <i class="fa-solid fa-house"></i>
+              <%= image_tag(category&.icon) %>
             </div>
             <div class='card--description'>
               <p><b><%= category&.name %></b></p>

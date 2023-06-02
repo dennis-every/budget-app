@@ -11,14 +11,13 @@
   }
 
   &--icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: var(--space-xs);
-    background: var(--color-background-light);
+    height: var(--space-xxxxl);
+    width: var(--space-xxxxl);
 
-    i {
-      font-size: var(--font-size-xxxl);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
 

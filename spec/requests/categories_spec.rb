@@ -19,6 +19,8 @@ describe 'Categories', type: :request do
         )
       end
 
+      let(:category) { Category.create!(name: "Food #{rand}", icon: 'https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg') }
+
       before do
         sign_in user
       end
