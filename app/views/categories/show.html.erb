@@ -7,6 +7,10 @@
   <main>
     <% if @expenses.any? %>
       <div class='categories--details mx-2'>
+        <div class='d-flex justify-content-between border-bottom py-2'>
+          <span>TOTAL PAYMENT</span>
+          <span><%= number_to_currency(@category.total(current_user)) %></span>
+        </div>
         <div class='categories--details--header border-bottom py-2'>
           <div class='d-flex py-2'>
             <span class='categories--details--header--icon'><%= image_tag @category&.icon %></span>
@@ -20,10 +24,6 @@
             <p class='text-muted'><i class="fa-solid fa-calendar"></i> <%= expense.created_at.strftime('%d %b  %Y at %I.%M%P') %></p>
           </div>
         <% end %>
-        <div class='d-flex justify-content-between py-3'>
-          <span>TOTAL PAYMENT</span>
-          <span><%= number_to_currency(@category.total(current_user)) %></span>
-        </div>
       </div>
     <% else %>
       <div class='categories--no-expenses'>
