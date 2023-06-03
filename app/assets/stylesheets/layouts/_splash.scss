@@ -1,0 +1,19 @@
+.splash {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  padding: 2rem;
+
+  * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+    font-family: cursive;
+    font-size: var(--font-size-xxxxl);
+    font-weight: bold;
+    text-align: center;
+  }
+}

@@ -1,0 +1,48 @@
+.menu {
+  background: #1f578a;
+  color: var(--color-white);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+
+  > * {
+    margin-bottom: var(--space-xxxl);
+  }
+
+  &--close {
+    font-size: var(--font-size-xxl);
+    text-align: end;
+
+    a {
+      color: var(--color-white);
+    }
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .avatar {
+      font-size: var(--font-size-xxxxl);
+      background: lightgray;
+      padding: var(--space-m);
+      border-radius: 50%;
+    }
+
+    > * {
+      margin-bottom: var(--space-m);
+    }
+  }
+
+  main {
+    > * {
+      margin-bottom: var(--space-m);
+    }
+
+    a {
+      color: var(--color-white);
+    }
+  }
+}

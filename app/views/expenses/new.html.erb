@@ -1,0 +1,10 @@
+<section class='categories'>
+  <header>
+    <%= link_to sanitize("&larr;"), @category, class: 'icon' %>
+    <h1>New Expense</h1>
+    <span></span>
+  </header>
+  <main>
+    <%= render 'form', expense: @expense %>
+  </main>
+</section>

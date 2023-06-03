@@ -1,0 +1,20 @@
+<%= form_with model: [@category, expense] do |form| %>
+  <%= form_error_notification(expense) %>
+  <div class="field border-top border-bottom">
+    <%= form.text_field :name, placeholder: 'Name' %>
+  </div>
+  <div class="field border-bottom">
+    <%= form.number_field :amount, placeholder: 'Amount' %>
+  </div>
+  <div>
+    <%= form.collection_select :category_ids, 
+                               Category.order(name: :asc),
+                               :id, 
+                               :name, 
+                               {prompt: '=== CAN SELECT MULTIPLE OPTIONS ==='}, 
+                               { multiple: true } %>
+  </div>
+  <div class='mt-5 px-1'>
+    <%= form.submit class: 'btn btn--primary' %>
+  </div>
+<% end %>

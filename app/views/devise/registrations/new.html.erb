@@ -1,0 +1,21 @@
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <section class='devise'>
+    <header>
+      <%= link_to sanitize("&larr;"), root_path, class: 'icon' %>
+      <h1>Register</h1>
+      <%= f.submit "Next", class: 'btn--ghost' %>
+    </header>
+    <main>
+      <%= render "devise/shared/error_messages", resource: resource %>
+      <div class="field border-top border-bottom">
+        <%= f.text_field :name, placeholder: 'Full name' %>
+      </div>
+      <div class="field border-bottom">
+        <%= f.email_field :email, placeholder: 'Email' %>
+      </div>
+      <div class="field border-bottom">
+        <%= f.password_field :password, autocomplete: "new-password", placeholder: 'Password' %>
+      </div>
+    </main>
+  </section>
+<% end %>
