@@ -1,3 +1,17 @@
+<a name="readme-top"></a>
+
+<div align="center">
+  <h1><b>BUDGET APP</b></h1>
+  <br />
+  <img src="./app/assets/images/list.png" alt="list" width="45%"  height="100%" />
+  <img src="./app/assets/images/menu.png" alt="menu" width="45%"  height="100%" />
+  <br />
+  <img src="./app/assets/images/details.png" alt="details" width="45%"  height="100%" />
+  <img src="./app/assets/images/form.png" alt="form" width="45%"  height="100%" />
+  <br />
+</div>
+
+<br />
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
